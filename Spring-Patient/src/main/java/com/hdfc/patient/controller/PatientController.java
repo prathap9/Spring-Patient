@@ -1,5 +1,7 @@
 package com.hdfc.patient.controller;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -19,7 +21,7 @@ public class PatientController {
 	IService service;
 	
 	@PostMapping("/add")
-	public String addPatient(@RequestBody Patient patient) {
+	public String addPatient(@Valid @RequestBody Patient patient) {
 
 		String msg = null;
 
