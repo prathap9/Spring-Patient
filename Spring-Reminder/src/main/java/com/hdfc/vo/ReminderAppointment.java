@@ -1,6 +1,6 @@
-package com.hdfc.appointment.vo;
+package com.hdfc.vo;
 
-import com.hdfc.appointment.entity.Reminder;
+import com.hdfc.entity.Reminder;
 
 public class ReminderAppointment {
 	

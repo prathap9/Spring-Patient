@@ -1,10 +1,7 @@
-package com.hdfc.appointment.entity;
+package com.hdfc.dto;
 
 import java.time.LocalDate;
-
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import java.time.LocalDateTime;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -15,17 +12,12 @@ import lombok.Setter;
 @AllArgsConstructor
 @Setter
 @Getter
-
-@Entity
-
-@Table(name = "reminder")
-
-public class Reminder {
-
-	@Id
+public class ReminderDTO {
+	
 	private int reminderID;
 	private int appointmentID;
 	private String reminderType; 
 	private LocalDate reminderDate;
 	
+
 }

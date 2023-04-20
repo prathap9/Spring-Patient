@@ -1,4 +1,4 @@
-package com.hdfc.appointment.dto;
+package com.hdfc.vo;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -12,12 +12,13 @@ import lombok.Setter;
 @AllArgsConstructor
 @Setter
 @Getter
-public class ReminderDTO {
+public class Appointment {
 	
-	private int reminderID;
 	private int appointmentID;
-	private String reminderType; 
-	private LocalDate reminderDate;
-	
+	private int patientID;
+	private int  doctorID;
+	private LocalDate  appointmentDate;
+	private LocalDateTime appointmentTime;
+	private String status;
 
 }

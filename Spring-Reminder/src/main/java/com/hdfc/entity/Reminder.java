@@ -1,4 +1,6 @@
-package com.hdfc.appointment.entity;
+package com.hdfc.entity;
+
+import java.time.LocalDate;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -15,13 +17,18 @@ import lombok.Setter;
 @Getter
 
 @Entity
-@Table(name ="queue")
-public class Queue {
+
+@Table(name = "reminder")
+
+public class Reminder {
 
 	@Id
-	private int queueID;
+	private int reminderID;
 	private int appointmentID;
-	private int queueNumber;
-	private String queueStatus;
-
+	private String reminderType; 
+	private LocalDate reminderDate;
+	
+	
+	
+	
 }
